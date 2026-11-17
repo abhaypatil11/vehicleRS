@@ -38,3 +38,16 @@ public ResponseEntity<ApiResponse> resetPassword(
             new ApiResponse("Password reset successful")
     );
 }
+@PostMapping("/change-password")
+public ResponseEntity<ApiResponse> changePassword(
+        @Valid @RequestBody ChangePasswordRequest request,
+        org.springframework.security.core.Authentication authentication) {
+
+    ApiResponse response = authService.changePassword(
+            authentication.getName(),
+            request.getCurrentPassword(),
+            request.getNewPassword()
+    );
+
+    return ResponseEntity.ok(response);
+}
