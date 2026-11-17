@@ -99,4 +99,27 @@ public void resetPassword(String token, String newPassword) {
     resetToken.setUsed(true);
     resetTokenRepository.save(resetToken);
 }
+    public ApiResponse changePassword(
+        String email,
+        String currentPassword,
+        String newPassword) {
+
+    UserCredential user = userRepository.findByEmail(email)
+            .orElseThrow(() ->
+                    new IllegalArgumentException("Account not found"));
+
+    if (!passwordEncoder.matches(currentPassword, user.getPassword())) {
+        throw new BadCredentialsException("Current password is incorrect");
+    }
+
+    if (passwordEncoder.matches(newPassword, user.getPassword())) {
+        throw new IllegalArgumentException(
+                "New password must be different from current password");
+    }
+
+    user.setPassword(passwordEncoder.encode(newPassword));
+    userRepository.save(user);
+
+    return new ApiResponse("Password changed successfully");
+}
 }
