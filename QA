@@ -1,0 +1,192 @@
+Project Introduction & Architecture	 	 	 	 	 	 	 	 	 
+1	Project Introduction	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+2	Project Flow of Application	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+3	Project PPT Explanation	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+4	Project Architecture Explanation	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+5	Architecture Diagram Walkthrough	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+6	Case Study Explanation	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+7	Layers in Microservice Architecture & their functionalities	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+8	Technologies used with versions in your project	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+9	Tech Stack used in your case study	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+10	Future improvements / future implementations in your project	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+11	Production‑ready improvements you would make	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+12	Explain any one Controller implemented in your project	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+13	DTO purpose and implementation in your project	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+14	Entity relationships in your services	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+15	Jar file storage after build	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Microservices Architecture Related	 	 	 	 	 	 	 	 	 
+16	Why Microservices Architecture?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+17	Benefits of Microservices over Monolithic Architecture	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+18	Advantages of Monolithic Architecture	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+19	Why modern applications prefer Microservices?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+20	Why different databases per microservice?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+21	Why not use different tables in a single DB?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+22	How did you implement data consistency across services?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+23	What happens if one microservice fails?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+24	How do you detect a disrupted service?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+API Gateway	 	 	 	 	 	 	 	 	 	 	 	 	 
+25	What is API Gateway?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+26	Roles of API Gateway	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+27	How do you integrate/register microservices with API Gateway?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+28	How does Admin access the application through Gateway?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Service Discovery – Eureka	 	 	 	 	 	 	 	 	 	 	 
+29	Why did you use Eureka Server?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+30	Need for Service Discovery	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+31	How does Eureka create an instance for a microservice?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+32	How are services registered with Eureka?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Inter‑Service Communication	 	 	 	 	 	 	 	 	 	 
+33	How do microservices communicate with each other?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+34	One‑way vs Two‑way service communication (arrow connections)	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+35	How does OpenFeign simplify communication?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+36	How did you implement Feign Client?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+37	Communication without OpenFeign (e.g., RestTemplate)	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+38	Synchronous vs Asynchronous communication	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+39	What have you used in your project and why?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+40	RabbitMQ implementation in your project	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+41	Use of RabbitMQ in future implementation	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Security	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+42	Authentication vs Authorization	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+43	How did you control access of authorized users?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+44	What is JWT and how did you use it?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+45	Security implemented at Gateway level or Service level?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Logging	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+46	How did you implement logging in your project?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Database & JPA Implementation	 	 	 	 	 	 	 	 	 	 
+47	Which database did you use?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+48	How did you configure the database?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+49	How is MySQL connected to Spring Boot?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+50	How are services connected to database (code explanation)?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+51	JPARepository extends which interface?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+52	Derived queries in JPA Repository	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+53	SQL Queries used in your project	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+54	Order By Desc query	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+55	DDL operations used	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+56	Primary Key vs Foreign Key in your schema	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+57	Operation used to combine two tables (JOIN)	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Exception Handling (Project Level)	 	 	 	 	 	 	 	 	 	 
+58	What is Global Exception Handling?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+59	How did you implement Global Exception Handling?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+60	How did you raise custom exceptions in your project?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Transactions	 	 	 	 	 	 	 	 	 	 	 	 	 
+61	What is @Transactional?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+62	Where did you use @Transactional in your project?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+63	@Transactional belongs to which concept?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Testing	 	 	 	 	 	 	 	 	 	 	 
+64	How does testing work in your project?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+65	JUnit implementation	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+66	Explain one challenging/edge test case	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+67	Mockito usage	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+68	What is @Mock?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+69	Can Swagger be used for testing?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Performance / Load Handling	 	 	 	 	 	 	 	 	 	 
+70	How does your system handle concurrent user requests?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+71	How do you handle server load?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+72	Load balancing in your project	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+73	Real‑world scenario: insufficient stock handling	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+74	Network issue scenario: response ID not received — how to fetch created data without ID?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Git / Build Tools	 	 	 	 	 	 	 	 	 	 	 	 	 
+75	What is Git?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+76	Why is Git used?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+77	What is GitHub?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+78	GitHub Rebase	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+79	How to check which branch you are working on?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+80	mvnw file usage	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+81	Maven commands used	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Spring Bean	 	 	 	 	 	 	 	 	 	 	 	 	 
+82	Scope of Bean used in your project	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+✅ B. CORE JAVA
+(These are THEORY / CONCEPTUAL questions)	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+OOPS	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+1	What is OOPS in Java?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+2	Where have you used OOPS concepts in your project?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+3	Is Java 100% OOP language?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+4	Difference between Abstract Class and Interface	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Java Basics	 	 	 	 	 	 	 	 	 	 	 	 	 
+5	Why Java is platform independent?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+6	Access Modifiers in Java & usage	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+7	How to call Static members?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+8	Constructor – why and how to create one?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+9	Difference between == and .equals()	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+10	Ways of creating String	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+11	How String Pool works?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Collections Framework	 	 	 	 	 	 	 	 	 	 	 
+12	What is Collections Framework?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+13	Features of Collections	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+14	Interfaces in Collections Framework	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+15	Internal working of Collections	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Exceptions	 	 	 	 	 	 	 	 	 	 	 	 	 
+16	What is Exception?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+17	Exception Class Hierarchy	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+18	Runtime vs Compile‑time Exceptions	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+19	How many types of Exceptions in Java?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+20	final vs finally vs finalize	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Functional Programming (Java 8)	 	 	 	 	 	 	 	 	 	 
+21	Functional Interfaces	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+22	Types of Functional Interfaces	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+23	Predicate Interface	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+24	Lambda Expression (write one)	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+25	Method Reference	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+26	Optional Class	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+27	Alternatives to Optional	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+28	Streams in Java	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+29	Intermediate vs Terminal operations	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+30	filter()	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+31	reduce()	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+32	map() vs flatMap()	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+33	List.of()	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Java 8 / 17 Features	 	 	 	 	 	 	 	 	 	 	 	 
+34	Features of Java 8	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+35	Why Java 8 features were introduced?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+36	Features of Java 17	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+37	Why modern applications prefer Java 17?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Spring Boot / Spring MVC	 	 	 	 	 	 	 	 	 	 	 
+38	What is Spring MVC?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+39	What is @SpringBootApplication?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+40	Use of @ComponentScan	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+41	@Component vs @Service	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+42	@Autowired	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+43	@Primary	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+44	@RequestBody	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+45	@ResponseBody	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+46	@Valid	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+47	@RestController	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+48	Lombok	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+JPA / Hibernate	 	 	 	 	 	 	 	 	 	 	 	 	 
+49	What is Hibernate?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+50	Why Hibernate?	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+51	Main uses of JPA	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+REST APIs	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+52	Types of REST APIs	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+53	ResponseEntity	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+54	HTTP Status Codes	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+Microservices Concepts	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+55	Load Balancer	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+56	Service Discovery	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+57	Feign Client (conceptual)	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+58	RabbitMQ (conceptual)	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+59	Synchronous vs Asynchronous Communication	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+60	Authentication vs Authorization														
