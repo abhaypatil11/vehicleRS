@@ -1,0 +1,192 @@
+What is Swagger? How do you write Swagger code for API documentation?
+What is the difference between SQL and NoSQL databases?
+What is a Feign Client? How do you write Feign client code in Spring Boot?
+How do you get distinct values from an ArrayList using Java Streams?
+What is a JWT token? How does it work?
+Explain the security flow in a web application.
+How do you write a JUnit test case? Provide an example.
+What is a LEFT JOIN in SQL? Write a query using LEFT JOIN.
+How do you filter odd numbers from an ArrayList using Java Streams?
+Explain the internal working of HashMap in Java.
+Explain Java Collections in depth. What are the main interfaces and classes?
+What is a Functional Interface in Java? Give examples.
+What is Lambda Expression? How is it used in Java?
+What is the difference between Fail-Fast and Fail-Safe iterators?
+What is caching? Why is it used?
+What is ConcurrentHashMap? How is it different from HashMap?
+What is Eureka Server? How is it used in microservices?
+What is the difference between RestTemplate and Feign Client?
+What is ResponseEntity in Spring Boot?
+What is Global Exception Handling? How do you handle specific exceptions?
+What are HTTP status codes? Explain commonly used ones.
+How do you calculate the average of an ArrayList using Java Streams?
+What are the different types of JOINs in SQL?
+What is a ClassLoader in JVM? How does it work?
+What is BindingResult in Spring Boot?
+What is HashMap collision? How is it handled?
+What is a Spring Boot application? What are its features?
+What is Dependency Injection? How does Spring implement it?
+Where do you store JWT tokens in an application?
+What is @Configuration class? How do you define and use a Bean?
+What is a Circuit Breaker? Why is it used in microservices?
+What are include, extend, and exclude in UML use case diagrams?
+What is Transactional Event Listener in Spring?
+What are Microservices Design Patterns? Name a few.
+What are the use cases of abstract classes and interfaces?
+How do you reverse a string in Java?
+What is the difference between List and Set?
+What is HashMap? How does it work?
+What are different types of Bean scopes in Spring?
+Explain try-catch-finally blocks in Java.
+What is CORS? Why is it needed?
+What is CSRF? How do you prevent it?
+What is Spring Boot Actuator?
+What is a Load Balancer? How does it work?
+What is the difference between synchronous and asynchronous processing?
+ 
+ 
+ 4. Spring Boot & Spring Core
+Core Concepts
+•	What is Spring Boot? How is it different from Spring?
+•	What is Dependency Injection?
+•	What is ApplicationContext?
+•	Explain Bean lifecycle and scopes.
+Annotations
+•	Explain:
+o	@Autowired, @Component, @Service, @Repository, @RestController
+•	How does Spring handle Dependency Injection internally?
+Architecture
+•	Explain:
+o	Controller → Service → Repository flow
+•	What happens internally when an API is called?
+ 
+ 5. REST APIs
+•	What is REST API?
+•	Explain HTTP methods:
+o	GET, POST, PUT, PATCH, DELETE
+•	Difference between PUT vs PATCH (real scenarios).
+•	What are proper HTTP status codes?
+•	How do you design a REST API?
+•	How do you handle:
+o	Invalid requests
+o	Error responses
+ 
+ 6. Validation, Security & JWT
+•	What is input validation?
+•	How do you implement validation in Spring Boot?
+•	What is JWT authentication?
+•	How does token validation work?
+•	Difference between authentication vs authorization.
+ 
+ 7. Microservices Architecture
+Core Concepts
+•	What are microservices?
+•	Difference between monolith vs microservices.
+•	Explain:
+o	API Gateway
+o	Eureka Server (Service Registry)
+o	Load balancer
+Communication
+•	How do microservices communicate?
+o	REST
+o	Feign Client
+•	Difference between:
+o	Synchronous vs asynchronous communication
+Resilience
+•	What happens if a service fails?
+•	Explain:
+o	Circuit breaker pattern
+o	Failover handling
+ 
+ 8. Messaging Systems
+•	What is Kafka?
+•	What is RabbitMQ?
+•	Is Kafka synchronous or asynchronous?
+•	When do you use messaging queues?
+ 
+ 9. Design Patterns (Missed Area – Now Included)
+•	What are design patterns?
+•	Explain:
+o	Singleton
+o	Factory
+o	Builder
+o	Observer
+•	Where are design patterns used in Spring Boot?
+•	Explain Dependency Injection as a design pattern.
+•	What is circuit breaker pattern?
+•	When to use design patterns in microservices?
+ 
+ 10. Hibernate & JPA
+•	What is Hibernate? What is JPA?
+•	Difference between JPA and Hibernate.
+•	Explain:
+o	Entity mapping
+o	Relationships (OneToOne, OneToMany, ManyToMany)
+•	Hibernate lifecycle.
+•	Difference between:
+o	update() vs merge()
+•	What is pagination?
+•	Explain caching levels.
+
+
+
+
+Spring Framework
+Core Spring
+58.	What is IOC?
+59.	How does IOC work?
+60.	What is Dependency Injection?
+61.	Types of Dependency Injection.
+62.	Types of Autowiring.
+63.	@Primary vs @Qualifier.
+64.	Bean Lifecycle.
+65.	Bean Scopes.
+66.	ApplicationContext vs BeanFactory.
+67.	Difference between @Component and @Bean.
+Spring AOP
+68.	Explain AOP.
+69.	What are Cross-Cutting Concerns?
+70.	What is Aspect?
+71.	What is Advice?
+72.	What is Pointcut?
+73.	What is Join Point?
+Spring Boot
+74.	What is Spring Boot Auto Configuration?
+75.	What is DispatcherServlet?
+76.	Flow of Spring Boot Application.
+Transactions
+77.	What is @Transactional?
+78.	Transaction Propagation.
+79.	Transaction Isolation Levels.
+________________________________________
+Spring Security & JWT
+80.	Authentication vs Authorization.
+81.	How JWT Works?
+82.	JWT Structure.
+83.	SecurityFilterChain.
+84.	Spring Security Authentication Flow.
+85.	Spring Security Authorization Flow.
+86.	CORS.
+87.	OAuth2 Basics.
+________________________________________
+Microservices
+88.	Monolith vs Microservices.
+89.	Spring Cloud Basics.
+90.	Feign Client.
+91.	API Gateway Responsibilities.
+92.	Service Discovery.
+93.	Load Balancer.
+94.	How to Implement Load Balancing?
+95.	Circuit Breaker Pattern.
+96.	Resilience4j.
+97.	Can a Microservice Use Multiple Databases?
+98.	Flow of Requests in Microservices.
+99.	Handling 10,000 API Requests per Second.
+________________________________________
+Messaging Systems
+100.	Kafka Architecture.
+101.	Kafka Workflow.
+102.	Kafka Producers and Consumers.
+103.	RabbitMQ Architecture.
+104.	RabbitMQ Message Flow.
+105.	Synchronous vs Asynchronous Messaging.
